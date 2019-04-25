@@ -1,0 +1,14 @@
+{
+  "name": "heroku-redeploy",
+  "description": "Heroku app to redeploy Heroku apps",
+  "repository": "https://github.com/gakimball/heroku-redeployer",
+  "keywords": ["heroku", "deploy", "redeploy", "release", "webhook"],
+  "env": {
+    "ENV_LIST": {
+      "description": "Query string of environment names mapped to Heroku apps."
+    },
+    "API_KEY": {
+      "description": "Heroku API key."
+    }
+  }
+}

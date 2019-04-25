@@ -1,0 +1,44 @@
+{
+  "name": "heroku-redeploy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Heroku app to redeploy Heroku apps",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "dev": "nodemon lib/index.js",
+    "test": "xo && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gakimball/heroku-redeploy.git"
+  },
+  "author": "Geoff Kimball <geoff@geoffkimball.com> (http://geoffkimball.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gakimball/heroku-redeploy/issues"
+  },
+  "homepage": "https://github.com/gakimball/heroku-redeploy#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "node-fetch": "^2.3.0",
+    "query-string": "^6.4.2"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "xo": {
+    "space": true,
+    "envs": [
+      "mocha"
+    ]
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.18.11",
+    "sinon": "^7.3.2",
+    "xo": "^0.24.0"
+  }
+}

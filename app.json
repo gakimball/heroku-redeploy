@@ -9,6 +9,11 @@
     },
     "API_KEY": {
       "description": "Heroku API key."
+    },
+    "PASSWORD": {
+      "description": "Access token needed to redeploy apps.",
+      "required": false,
+      "generator": "secret"
     }
   }
 }

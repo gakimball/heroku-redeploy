@@ -64,6 +64,27 @@ The endpoint returns a JSON response with an array of apps that were targeted fo
 ]
 ```
 
+### Security
+
+If you want, you can require an authentication key to redeploy an app. In your app's environment, add the `PASSWORD` variable:
+
+```
+PASSWORD=swordfish
+```
+
+Then, in your requests, you can include the password in the URL with the `access_token` parameter:
+
+```
+POST https://xxx.herokuapp.com/deploy?apps=staging&access_token=swordfish
+```
+
+Or, you can include it in the `Authorization` header:
+
+```
+POST https://xxx.herokuapp.com/deploy?apps=staging
+Authorization: Bearer swordfish
+```
+
 ## Local Development
 
 ```bash
